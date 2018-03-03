@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="{% static 'css/default.css' %}">
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}">
+   <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+   <!-- Script
+   ================================================== -->
+	<script src="{% static 'js/modernizr.js' %}"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{% static 'favicon.png' %}" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <!--<li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>-->
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Corey Collins.</h1>
+            <h3>An upcoming <span>Software Engineering</span> graduate looking to find his place in life. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+               <li><a href="https://www.linkedin.com/in/corey-collins-363502107/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://instagram.com/projectoriented/"><i class="fa fa-instagram"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="{% static 'images/profilepic.jpg' %}" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>
+              My passion is in the art of design. I want to better my skills every day in hopes of changing the way we interact in our daily lives.
+              Whilst finishing my CS degree at the University of Massachusetts Amherst I've been building skills to prepare me for developer job market.
+              I've learned to start a company, perform database management, and become familiar with countless programming languages on my free time - all the while
+              studying the Software Engineering theory and principles.
+              <br/><br/>
+              In the Summer of 2017 I used all I could to bring myself across the country to the Bay area, just to experience the world's best developers to model myself out of. I'm truly
+              devoted to doing whatever I can to make a company a success!
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Corey Collins</span><br>
+						   <span>9D Brandywine<br>
+						         Amherst, MA 01002 US
+                     </span><br>
+						   <span>(774) 644-5538</span><br>
+                     <span>cwcollins@umass.edu</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="{% static 'CoreyCollinsResume.pdf' %}" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>University of Massachusetts Amherst</h3>
+                  <p class="info">Computer Science (Software Engineering) <span>&bull;</span> <em class="date">May 2018</em></p>
+
+                  <p>
+                    <ul>
+                      <li>
+                        <b>Programming Methodology:</b> Using Scala to build project applications
+                      </li>
+                      <li>
+                        <b>Computer Systems:</b> Used C for byte manipulation and reverse engineering
+                      </li>
+                      <li>
+                        <b>Computation:</b> Number theory, Boolean Algebra, Discrete Math, Proofs with Induction, Language Theory, Huffman Encoding, built (non)deterministic finite automaton.
+                      </li>
+                      <li>
+                        <b>Algorithms:</b> Analysis on Greedy, Divide & Conquer, Matching, Network Flow, Randomized, and Approximation algorithms. Proofs on P vs NP reduction.
+                      </li>
+                      <li>
+                        <b>Software Engineering:</b> Semester long team-based project developing analysis web-software for HP-Enterprise
+                      </li>
+                      <li>
+                        <b>Software Engineering Design & Analysis:</b> Worked alongside Graduate students to build a website to recommend elevation-based navigational routes.
+                      </li>
+                      <li>
+                        <b>Networking:</b> Studyed the networking application layer, transport layer, data plane, control plane, and link layer.
+                      </li>
+                      <li>
+                        <b>Operating Systems:</b> CPU process virtualization and scheduling, concurrency, filesystems, and projects done in C++.
+                      </li>
+                      <li>
+                        <b>Architecture:</b> Studied how a computer works at its lowest possible level. Used microprocessors and breadboards to implement an ALU as well as a
+                        final project that uses ARM microprocessors to read from Twitter API. Assignments were done typically in C and Assembly.
+                      </li>
+                    </ul>
+
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Project "EleNa"</h3>
+                  <p class="info">UMass Software Engineering<span>&bull;</span> <em class="date">Fall 2017</em></p>
+
+                  <p>
+                  Our goal was to design software that calculates and optimizes a route for bikers. However we believe we
+                  went the extra mile and did much more than that. Our backend will take two source/destination strings, construct a street graph
+                  using nodes and edges, inject grades for the edges using Google Elevations API, and perform various impedance functions on them
+                  to produce various behaviors using Dijkstras search algorithm. Waypoints are sent back in JSON formatting for the frontend to guide you
+                  through the route in a friendly manner. Our frontend can provide you elevation profiles for your route that optimize cruising, uphill, or downhill
+                  slopes.
+                  <br/>
+                  <br/> See our <b>github</b> repo & <b>documentation</b> for this project <a href="https://github.com/namanshenoy/elenaroosevelt/">here</a>!
+                  <br/> View our final <b>product</b> <a href="http://www.elenaroosevelt.world:7000">here</a>!
+                  <br/> <br/> <i>**This instance only works in the Amherst area for hosting on a low memory server**</i>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>UMass Amherst Information Technology</h3>
+                  <p class="info">Student Consultant & Repair Technician <span>&bull;</span> <em class="date">Fall 2014 - Spring 2017</em></p>
+
+                  <p>Working at UMass IT really helped me engage myself in the social aspects of communicating with clients.
+                    I really enjoyed my time there as I got to practice my technical & customer service skills everyday while
+                    learning to be part of a large organization, servicing a clientele of over 30,000 students and faculty.</p>
+
+                  <ul style="list-style-type:disc">
+                    <b>Skillset gained:</b>
+                    <li>Proficiency in diagnosing machines under Windows, Mac OSX, and Linux Operating Systems.</li>
+                    <li>Knowledgeable in BASH used for scripting, diagnosing, and performing data recovery.</li>
+                    <li>Access to University Account Management services to handle customer account inquiries.</li>
+                    <li>Extensive knowledge in BMC Remedy software to create and modify customer service tickets</li>
+                    <li>Experience communicating with staff across IRC Software.</li>
+                    <li>Able to manage software and communication under a Virtual Private Network to maintain company security.</li>
+                    <li>Long-time experience with weekly staff meetings to consult knowledge in preventing issues with the company workflow.</li>
+                    <li>Experience performing hardware repairs on any PC, Mac, or Linux product.</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>QuickPloy LLC</h3>
+                  <p class="info">CoFounder & Project Software Engineer <span>&bull;</span> <em class="date">December 2017 - Present</em></p>
+
+                  <p>QuickPloy is an idea turning into a reality. We're designig solutions to make it feasible to manage your own
+                  schedule and become your own boss. Our app will organize and schedule tasks you pick up or post for others to perform.
+                  We're excited to see this hit the app store soon!</p>
+
+                  <ul style="list-style-type:disc">
+                    <li>Officially registered and cofounded QuickPloy LLC on January 5, 2017</li>
+                    <li>Designing solutions for those in need to quickly find or post jobs</li>
+                    <li>Lead Mobile Software Engineer and Project Manager</li>
+                    <li>Designed QuickPloy System Requirements and Specifications as proposal to potential investors</li>
+                    <li>Actively designing QuickPloy's full-stack Software Architecture</li>
+                    <li>Actively releasing project updates via site newsletter</li>
+                    <li>Social Media Marketing</li>
+                    <li>Constructed app landing page</li>
+                  </ul>
+
+                  <br/> View our <b>landing page</b> <a href="http://www.quickploy.com/">here</a>!
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>HP Enterprise partnership with UMass CICS</h3>
+                  <p class="info">Software Engineer for Storage Performance Analytics Project<span>&bull;</span> <em class="date">December 2017 - Present</em></p>
+
+                  <p>Our software engineering class broke into four teams to provide our own implementation of a storage analytics site for
+                  the clientele of HP Enterprise. The goal was given millions of CSV entries, design a database to provide analytics on the customers systems,
+                  as well as provide tips and display its health.</p>
+
+                  <b>Skillset gained:</b>
+                  <ul style="list-style-type:disc">
+                    <li>Delegated a team of engineers under a project manager to implement full-stack Storage Performance Analytics software for HP Enterprise using Django Web Framework.</li>
+                    <li>Integrated a custom RESTful API to communicate between frontend and backend software.</li>
+                    <li>Integrated a multithreaded database with PostgreSQL.</li>
+                    <li>Presented backend data in JSON form via graphical visualizations using javascript libraries.</li>
+                    <li>Produced project documents including System Requirements, High Level Design, and Low Level Design.</li>
+                    <li>Presented software architecture to HP Enterprise using Unified Modeling Language (UML).</li>
+                    <li>Gained experience working in a software development team.</li>
+                    <li>Was able to analyze a proposed system and produce a set of requirements.</li>
+                    <li>Produce an efficient, modular design for a proposed software system.</li>
+                    <li>Understood the process of building software to specification on a schedule.</li>
+                    <li>Was knowledgeable about the economics of software development (the estimation and
+measurement of resources expended in building a software product).</li>
+                    <li>Comprehended the discipline of software engineering and the problems of developing hi-
+quality software with a limited amount of time and resources.</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>lifelog.tv</h3>
+                  <p class="info">Creator<span>&bull;</span> <em class="date">Summer 2017 - Present</em></p>
+
+                  <p>Lifelog is my personal project, my idea of a perfect social media platform to organize bloggers and vloggers alike.
+                  Its goal is to provide elegance in the organization of internet content, whether it is photos, videos, links, or a combination of them all.
+                  The platform organizes creators and is free and open in how it operates fairly to each of them (unlike its competitors).</p>
+
+                  <b>Summary:</b>
+                  <ul style="list-style-type:disc">
+                    <li>Designed an uploading script that encodes user uploaded videos, breaks them into different formats to be dashed and uploaded to S3 buckets, using a custom lifelog DASH-MPEG
+                      powered video player that optimizes buffering based on the user's bitrate.</li>
+                    <li>Designing and testing a new concept of social media sharing using tree-based categories for ease of navigation and replacing the idea of hashtags in current social sites.</li>
+                    <li>Developed a powerful Django and PostgreSQL backend to be migrated to AWS on deployment, as well as a token authenticated REST API to shorten production time of frontend clients. Webapp frontend in CSS/HTML/JS/Bootstrap is in testing.</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Twitter Display Feed</h3>
+                  <p class="info">UMass CICS Project<span>&bull;</span> <em class="date">Fall 2017</em></p>
+
+                  <b>Summary:</b>
+                  <ul style="list-style-type:disc">
+                    <li>Goal: Design a prototype for a location-based twitter display feed, completely wireless in the form of a desk gadget.</li>
+                    <li>Implemented using MBED, Arduino, and Python libraries.</li>
+                    <li>Breadboard prototyping using LED display, MBED microprocessor, and ESP8266 WiFi module.</li>
+                    <li>Hosted AWS lambda function to fetch tweets within an area, retrieved by the ESP8266 WiFi module via HTTP and JSON parsing.</li>
+                  </ul>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>My longterm life goal is to be as proficient as can be with as many tools and technologies as possible.
+              In contrast to most studying Computer Scientists I have excessive knowledge in a number of frameworks and languages
+              for the purpose of providing multiple solutions to any problem that arises.
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+            <li><span class="bar-expand python"></span><em>Python</em></li>
+            <li><span class="bar-expand cpp"></span><em>C/C++</em></li>
+            <li><span class="bar-expand csharp"></span><em>C#</em></li>
+            <li><span class="bar-expand java"></span><em>Java</em></li>
+            <li><span class="bar-expand scala"></span><em>Scala</em></li>
+            <li><span class="bar-expand git"></span><em>Git</em></li>
+            <li><span class="bar-expand bash"></span><em>BASH</em></li>
+            <li><span class="bar-expand django"></span><em>Django</em></li>
+            <li><span class="bar-expand vuejs"></span><em>VueJS</em></li>
+            <li><span class="bar-expand vuetify"></span><em>Vuetify</em></li>
+            <li><span class="bar-expand angular"></span><em>Angular</em></li>
+            <li><span class="bar-expand bootstrap"></span><em>Bootstrap</em></li>
+            <li><span class="bar-expand materialize"></span><em>Materialize</em></li>
+            <li><span class="bar-expand android"></span><em>Android Studio</em></li>
+            <li><span class="bar-expand xamarin"></span><em>Xamarin</em></li>
+            <li><span class="bar-expand sdl"></span><em>Simple Direct-media Layer</em></li>
+            <li><span class="bar-expand aws"></span><em>Amazon Web Services</em></li>
+            <li><span class="bar-expand assembly"></span><em>Assembly (primarily ARM)</em></li>
+            <li><span class="bar-expand prototyping"></span><em>MBED Prototyping</em></li>
+					  <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+						<li><span class="bar-expand css"></span><em>CSS</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+            <li><span class="bar-expand javascript"></span><em>JavaScript</em></li>
+            <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="{% static 'images/elena.png' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Project EleNa</h5>
+                              <p>Elevation-based Navigation</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="{% static 'images/lifelog.png' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Console</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="{%static 'images/quickploy.jpg' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>QuickPloy</h5>
+                              <p>App Development, Design</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="{% static 'images/hp.png' %}">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>System Storage Analytics</h5>
+                              <p>HP-Enterprise with UMass Amherst</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/elena.png' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Project EleNa</h4>
+			      <p>Our implementation was titled 'Elena Roosevelt' and is currently archived on heroku. For conservation of memory we are currently only resolving routes within the Amherst MA / Pioneer Valley area.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign, Navigation</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://elenaroosevelt.herokuapp.com/">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/lifelog-alpha.png' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>LifeLog</h4>
+			      <p>A personal project in development. Users can share channels with one another, uploading content to share to the world. Custom DASH video player was developed for this site, the same format as YouTube.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Web Development, Video Sharing</span>
+		      </div>
+
+            <div class="link-box">
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/quickploy.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>QuickPloy</h4>
+			      <p>A company forming an application to help you find work and build your own schedule. Post or search for tasks in your area, employment comes to you. App planned for a May beta.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://quickploy.com">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/hp.png' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>System Storage Analytics</h4>
+			      <p>Our team 'Ten of 10' assembled analytics software for HP-Enterprise to implement into their existing platform, to process millions of entries of system timestamps and provide suggestions to clients.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://docs.google.com/document/d/1f_dYpeb0FbdRrZWrC13dUGi4iEZdF9r7fFOMcExk6zU/edit?usp=sharing">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-farmerboy.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Farmer Boy</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-girl.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Girl</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-origami.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Origami</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="{% static 'images/portfolio/modals/m-retrocam.jpg' %}" alt="" />
+
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           to do what you believe is great work. And the only way to do great work is to love what you do.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                           </p>
+                           <cite>Steve Jobs</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Everything should be made as simple as possible, but not simpler.
+                           </p>
+                           <cite>Albert Einstein</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Keep in touch with me via email.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="mailto:cwcollins@umass.edu?subject=contactSubject&message=contactMessage" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="{%static 'images/loader.gif' %}">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/corey-collins-363502107/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://instagram.com/projectoriented/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <!--<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   -->
+   <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+   <script type="text/javascript" src="{% static 'js/jquery-migrate-1.2.1.min.js' %}"></script>
+
+   <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+   <script src="{% static 'js/waypoints.js' %}"></script>
+   <script src="{% static 'js/jquery.fittext.js' %}"></script>
+   <script src="{% static 'js/magnific-popup.js' %}"></script>
+   <script src="{% static 'js/init.js' %}"></script>
+
+</body>
+
+</html>
